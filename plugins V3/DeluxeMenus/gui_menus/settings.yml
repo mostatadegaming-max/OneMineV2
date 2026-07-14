@@ -1,0 +1,52 @@
+menu_title: '&8⚙ &7Einstellungen'
+
+size: 36
+
+items:
+
+  border:
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+      - 0-35
+    display_name: '&7'
+
+
+  sounds:
+    material: NOTE_BLOCK
+    slot: 11
+    display_name: '&a&l🔊 Sounds'
+    lore:
+      - '&7Sound Einstellungen'
+
+
+  chat:
+    material: BOOK
+    slot: 13
+    display_name: '&e&l💬 Chat'
+    lore:
+      - '&7Chat Einstellungen'
+
+
+  particles:
+    material: FIREWORK_ROCKET
+    slot: 15
+    display_name: '&b&l✨ Partikel'
+    lore:
+      - '&7Partikel Einstellungen'
+
+
+  info:
+    material: KNOWLEDGE_BOOK
+    slot: 22
+    display_name: '&6&l📜 OneMine'
+    lore:
+      - '&7Piraten Survival Server'
+      - '&7Version 1.21.11'
+
+
+  back:
+    material: ARROW
+    slot: 31
+    display_name: '&7⬅ Zurück'
+    left_click_commands:
+      - '[openguimenu] main'

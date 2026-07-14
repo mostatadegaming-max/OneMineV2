@@ -1,0 +1,61 @@
+database:
+  # Verfügbare Typen: mysql, mariadb, postgresql, mongodb
+  type: "mysql"
+
+  mysql:
+    host: "localhost"
+    port: 3306
+    database: "auctionhouse"
+    username: "root"
+    password: "password"
+    
+  postgresql:
+    host: "localhost"
+    port: 5432
+    database: "auctionhouse"
+    username: "postgres"
+    password: "password"
+
+  mongodb:
+    uri: "mongodb://localhost:27017"
+    database: "auctionhouse"
+
+# Allgemeine Einstellungen
+settings:
+  language: "en"
+  currency_symbol: "$"
+  max_auctions_per_player: 5
+  auction_duration_hours: 48
+  
+  # Verkaufs-Einstellungen
+  selling:
+    # Prozentsatz der Verkaufsgebühr (0.1 = 10%)
+    tax_percent: 0.05
+    # Minimale Gebühr (wird immer abgezogen beim Einstellen)
+    listing_fee: 10.0
+    # Minimaler Preis für ein Item
+    min_price: 1.0
+    # Maximaler Preis für ein Item
+    max_price: 1000000.0
+    # Cooldown zwischen dem Erstellen von Auktionen (in Sekunden)
+    cooldown_seconds: 30
+    # Minimaler Erhöhungsschritt für Gebote
+    min_bid_increment: 1.0
+
+  # GUI Design
+  gui:
+    title: "§8» §6§lAuktionshaus §7- Seite %page%"
+    # Füll-Material für leere Slots am Rand
+    filler_material: "GRAY_STAINED_GLASS_PANE"
+    
+  # Benachrichtigungen (Sounds)
+  sounds:
+    enabled: true
+    on_buy: "ENTITY_PLAYER_LEVELUP"
+    on_sell: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    on_expire: "BLOCK_NOTE_BLOCK_BASS"
+
+# Datenbank Logs
+logging:
+  enabled: true
+  log_transactions: true

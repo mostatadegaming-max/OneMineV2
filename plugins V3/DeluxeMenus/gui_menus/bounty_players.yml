@@ -1,0 +1,30 @@
+menu_title: '&8🎯 &cSpieler auswählen'
+
+size: 45
+
+items:
+
+  border:
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+      - 0-44
+    display_name: '&7'
+
+
+  player1:
+    material: PLAYER_HEAD
+    slot: 13
+    display_name: '&eSpieler auswählen'
+    lore:
+      - '&7Hier kommt später'
+      - '&7die Spielerliste'
+      - ''
+      - '&cBenötigt OneMine-Bounty GUI'
+
+
+  back:
+    material: ARROW
+    slot: 40
+    display_name: '&7⬅ Zurück'
+    left_click_commands:
+      - '[openguimenu] bounties'

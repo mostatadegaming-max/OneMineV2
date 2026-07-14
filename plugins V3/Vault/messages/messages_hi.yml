@@ -1,0 +1,310 @@
+# Hindi messages (हिंदी)
+pay:
+  # Command messages expected by code
+  only_players: "&cकेवल खिलाड़ी /pay का उपयोग कर सकते हैं।"
+  no_permission: "&cआपके पास /pay का उपयोग करने की अनुमति नहीं है।"
+  invalid_amount: "&cअमान्य राशि।"
+  player_offline: "&cखिलाड़ी &f%player% ऑफ़लाइन है; अनुरोध वितरित नहीं किया गया।"
+  amount_too_small: "&cराशि कम से कम &6%min% होनी चाहिए"
+  amount_too_large: "&cराशि अधिकतम &6%max% होनी चाहिए"
+  not_enough_money: "&cअपर्याप्त धनराशि।"
+  withdraw_failed: "&cपैसे निकालने में असमर्थ।"
+  sent_ok: "&aआपने &f%player% को &6%amount% का भुगतान किया"
+  received_ok: "&aआपको &f%player% से &6%amount% प्राप्त हुए"
+  cancelled: "&cभुगतान अनुरोध रद्द कर दिया गया।"
+
+  # UI/menu and other messages
+  menu:
+    title_main: "&8&lखिलाड़ी चुनें"
+    title_player: "&8&lक्रियाएँ: &f%player%"
+    title_quick_pay: "&8&lत्वरित भुगतान: &f%player%"
+    nav:
+      prev_name: "&aपिछला पृष्ठ"
+      next_name: "&aअगला पृष्ठ"
+    item:
+      pay: "&6&lभुगतान करें"
+      loan: "&e&lऋण"
+      view_balance: "&e&lपैसा"
+      view_balance_lore: "शेष राशि: %vault_eco_balance_short%"
+      charge: "&6&lचार्ज करें"
+      settings: "&c&lसेटिंग्स"
+      manual_amount: "&a&lकस्टम राशि"
+      back: "&c&lवापस"
+    lore:
+      settings:
+        - "&7Vault सेटिंग्स खोलें।"
+      pay:
+        - "&7इस खिलाड़ी को भुगतान करें।"
+      quick_pay:
+        - "&7इस राशि का तुरंत भुगतान करें।"
+      loan:
+        - "&7ऋण मेनू खोलें।"
+      view_balance:
+        - "&7%player% का वर्तमान बैलेंस दिखाता है।"
+      charge:
+        - "&7भुगतान अनुरोध भेजें।"
+      manual_amount:
+        - "&7राशि चैट में लिखें।"
+      back:
+        - "&7पिछले मेनू पर वापस जाएँ।"
+  prompt:
+    enter_amount_pay: "&aचैट में &f%player% को भुगतान करने के लिए राशि टाइप करें, या &c%cancel%."
+    enter_amount_charge: "&aचैट में &f%player% से चार्ज करने के लिए राशि टाइप करें, या &c%cancel%."
+    cancel_words: "&cरद्द,cancel,cancelar"
+  error:
+    player_not_found: "&cखिलाड़ी नहीं मिला: &f%player%"
+    invalid_amount: "&cअमान्य राशि।"
+    positive_only: "&cराशि सकारात्मक होनी चाहिए।"
+    min_amount: "&cराशि कम से कम &6%min% होनी चाहिए"
+    max_amount: "&cराशि अधिकतम &6%max% होनी चाहिए"
+    insufficient_funds: "&cअपर्याप्त धनराशि।"
+    withdraw_error: "&cनिकालने में असमर्थ: &4%error%"
+    deposit_error: "&cजमा करने में असमर्थ: &4%error%"
+    player_offline: "&cखिलाड़ी %player% ऑफ़लाइन है; अनुरोध वितरित नहीं किया गया।"
+  success:
+    sender: "&aआपने &f%player% को &6%amount% का भुगतान किया"
+
+  view:
+    balance: "&a&f%player% की शेष राशि: &6%amount%"
+    money_label: "&eपैसा"
+  request:
+    prefix: "&eभुगतान अनुरोध तैयार: "
+    click: "&f%player% को &6%amount_formatted% भुगतान करने के लिए यहाँ क्लिक करें"
+    hover: "/pay &f%player% &6%amount% चलाएं"
+    sent: "&a&f%player% को &6%amount_formatted% के लिए अनुरोध भेजा गया।"
+    stored: "&aअनुरोध संग्रहीत; &f%player% के शामिल होने पर वितरित किया जाएगा।"
+  pending:
+    header: "&aआपके पास &e%count% लंबित भुगतान अनुरोध हैं।"
+    limit_notice: "%total% में से %shown% दिखा रहा है; शेष बाद में वितरित किए जाएंगे।"
+
+cmd:
+  pay:
+    only_players: "केवल खिलाड़ी /pay का उपयोग कर सकते हैं।"
+    no_permission: "आपके पास /pay का उपयोग करने की अनुमति नहीं है।"
+    usage: "उपयोग: /pay <player> <amount> (या मेनू खोलने के लिए /pay, /pay <player> सबमेनू खोलता है)"
+    player_not_found: "खिलाड़ी नहीं मिला: &f%player%"
+    invalid_amount: "अमान्य राशि: &6%amount%"
+    positive_only: "राशि सकारात्मक होनी चाहिए।"
+  balance:
+    only_players: "&cयह कमांड केवल खिलाड़ियों के लिए है।"
+    no_permission: "&cआपके पास /balance का उपयोग करने की अनुमति नहीं है।"
+    your_balance: "आपकी शेष राशि: &6%amount%"
+  vault:
+    no_permission: "&cआपके पास प्लगइन को फिर से लोड करने की अनुमति नहीं है।"
+
+# Keys expected by menu service (top-level)
+menu:
+  title_main: "&8&lखिलाड़ी चुनें"
+  title_player: "&8&lक्रियाएँ: &f%player%"
+  target_player: "&8&lलक्ष्य चुनें"
+  target_player_lore: "&aखिलाड़ी चुनने के लिए क्लिक करें"
+  enter_amount: "&aराशि दर्ज करें"
+  enter_amount_lore: "&aचैट में राशि टाइप करें"
+
+# Keys expected by balance command (top-level)
+balance:
+  no_permission: "&cआपके पास /balance का उपयोग करने की अनुमति नहीं है।"
+  your_balance: "&6आपकी शेष राशि: %amount%"
+
+  only_players: "&cयह कमांड केवल खिलाड़ियों के लिए है।"
+plugin:
+  enabled: "आंतरिक अर्थव्यवस्था Vault.jar पर निर्भर किए बिना पंजीकृत है"
+  disabled: "Vault (आंतरिक अर्थव्यवस्था) अक्षम है।"
+  reloaded: "कॉन्फ़िगरेशन और संदेश फिर से लोड किए गए (भाषा: %lang%)।"
+
+prefix: "&#1fc9ff&lV&#4bd7fe&la&#76e4fc&lu&#a2f2fb&ll&#cdfff9&lt"
+
+top:
+  unknown_player: "खिलाड़ी"
+
+vaultop:
+  no_permission: "&cआपके पास /vaultop उपयोग करने की अनुमति नहीं है।"
+  top_unavailable: "&cवर्तमान इकोनॉमी प्रदाता के साथ टॉप उपलब्ध नहीं है।"
+  top_header: "&6टॉप पैसा &7(पृष्ठ %page%/%pages%):"
+  no_data: "&7अभी तक बैलेंस डेटा नहीं है।"
+
+vault:
+  menu:
+    title: "&bVault Menu"
+    item:
+      pay: "&aPay"
+      loan: "&aऋण"
+      settings: "&cसेटिंग्स"
+      reload: "&eरीलोड"
+      update: "&bअपडेट"
+    lore:
+      pay:
+        - "&7Pay मेनू खोलें।"
+      loan:
+        - "&7ऋण अनुरोध, देखें और भुगतान करें।"
+      settings:
+        - "&7प्लगइन सेटिंग्स बदलें।"
+      reload:
+        - "&7कॉन्फ़िग और संदेश रीलोड करें।"
+      update:
+        - "&7अपडेट जांचें।"
+
+settings:
+  title: "&cसेटिंग्स"
+  title_loans: "&cऋण सेटिंग्स"
+  title_pay: "&cPay सेटिंग्स"
+  title_texts: "&cटेक्स्ट सेटिंग्स"
+  item:
+    loans: "&aऋण"
+    pay: "&aPay"
+    texts: "&aटेक्स्ट"
+    back: "&7वापस"
+  lore:
+    loans:
+      - "&7ऋण सिस्टम कॉन्फ़िगर करें।"
+    pay:
+      - "&7/pay लिमिट्स और मेनू कॉन्फ़िगर करें।"
+    texts:
+      - "&7मेनू टेक्स्ट एडिट करें।"
+    back:
+      - "&7वापस जाएं।"
+    loans_enabled:
+      - "&7ऋण चालू/बंद करें।"
+    loans_min:
+      - "&7न्यूनतम ऋण राशि।"
+    loans_max:
+      - "&7अधिकतम ऋण राशि।"
+    loans_max_installments:
+      - "&7अधिकतम किस्तें।"
+    loans_default_interval_hours:
+      - "&7किस्तों के बीच डिफॉल्ट घंटे।"
+    loans_charge_check_seconds:
+      - "&7चार्ज प्रोसेस कितनी बार हो।"
+    loans_max_missed:
+      - "&7डिफॉल्ट से पहले कितनी चूक।"
+    pay_min:
+      - "&7न्यूनतम भुगतान राशि।"
+    pay_max:
+      - "&7अधिकतम भुगतान राशि।"
+    pay_menu_size:
+      - "&7/pay मेनू आकार (9 का गुणक)।"
+    pay_show_self:
+      - "&7/pay सूची में खुद को दिखाएं।"
+  loans:
+    enabled: "&fऋण"
+    min: "&fन्यूनतम ऋण"
+    max: "&fअधिकतम ऋण"
+    max_installments: "&fअधिकतम किस्तें"
+    default_interval_hours: "&fडिफॉल्ट अंतराल (h)"
+    charge_check_seconds: "&fचेक (s)"
+    max_missed: "&fअधिकतम चूक"
+  pay:
+    min: "&fन्यूनतम भुगतान"
+    max: "&fअधिकतम भुगतान"
+    menu_size: "&f/pay मेनू आकार"
+    show_self: "&fखुद दिखाएं"
+  prompt:
+    value: "&a&e%key% के लिए नई वैल्यू चैट में लिखें, या &c%cancel%."
+    text: "&a&e%key% के लिए नया टेक्स्ट चैट में लिखें, या &c%cancel%."
+  cancelled: "&cएडिट रद्द किया गया।"
+  invalid_number: "&cअमान्य संख्या।"
+  saved: "&aसेव हुआ: &e%key%"
+  save_failed: "&cफ़ाइल सेव नहीं हो सकी।"
+
+loan:
+  no_permission: "&cआपके पास ऋण उपयोग करने की अनुमति नहीं है।"
+  none: "&aआपके पास कोई सक्रिय ऋण नहीं है।"
+  already_active: "&aआपके पास पहले से एक सक्रिय ऋण है।"
+  cancelled: "&cऋण कार्रवाई रद्द कर दी गई।"
+  created: "&aऋण बनाया गया: &6%amount% &7| किस्तें: &f%installments% &7| किस्त राशि: &6%installment_amount% &7| हर &f%interval_hours%h"
+  paid: "&2आपका ऋण पूरी तरह चुकाया जा चुका है।"
+  status: "&2ऋण: मूलधन &f%principal% &7| शेष &f%remaining% &7| किस्त &6%installment% &7| बची हुई किस्तें &f%installments_left% &7| अगली कटौती &c%next_in_minutes%m में"
+  menu:
+    title: "&aऋण"
+    item:
+      request: "&aअनुरोध"
+      status: "&eस्थिति"
+      pay: "&6भुगतान"
+      settings: "&cसेटिंग्स"
+    lore:
+      request:
+        - "&7नया ऋण अनुरोध करें।"
+      status:
+        - "&7ऋण की स्थिति देखें।"
+      pay:
+        - "&7ऋण का भुगतान करें।"
+      settings:
+        - "&7ऋण सेटिंग्स खोलें।"
+  request:
+    title:
+      type: "&aऋण अनुरोध"
+      delay: "&eकुल देरी"
+      installments_mode: "&eकिस्त मोड"
+      installments_count: "&eकिस्त संख्या"
+      interval: "&eअंतराल"
+      first_delay: "&eपहली किस्त"
+    item:
+      total: "&eTotal"
+      installments: "&aकिस्तें"
+      mode_count: "&eसंख्या"
+      mode_amount: "&eराशि"
+      same_as_interval: "&eअंतराल जैसा"
+      back: "&7वापस"
+      cancel: "&cरद्द"
+    lore:
+      total:
+        - "&7एक बार भुगतान।"
+      installments:
+        - "&7किस्तों में भुगतान।"
+      mode_count:
+        - "&7किस्तों की संख्या चुनें।"
+      mode_amount:
+        - "&7किस्त राशि चैट में लिखें।"
+      installments_count:
+        - "&7किस्त संख्या चुनें।"
+      delay:
+        - "&7कितने घंटों में चार्ज होगा चुनें।"
+      interval:
+        - "&7किस्तों के बीच घंटे चुनें।"
+      first_delay:
+        - "&7पहली किस्त की देरी चुनें।"
+      back:
+        - "&7वापस जाएं।"
+      cancel:
+        - "&7अनुरोध रद्द करें।"
+  prompt:
+    cancel_words: "&cरद्द,&ccancel,&ccancelar"
+    amount: "&aचैट में ऋण राशि टाइप करें, या &c%cancel%."
+    type: "&a'total' (एकमुश्त भुगतान) या 'किस्तें' टाइप करें, या &c%cancel%."
+    total_delay_hours: "&aसर्वर कुल भुगतान कितने घंटों बाद वसूल करे? (उदाहरण: 24) या &c%cancel%."
+    installments_mode: "&a'संख्या' (किस्तों की संख्या) या 'राशि' (प्रति किस्त राशि) टाइप करें, या &c%cancel%."
+    installments_count: "&aकितनी किस्तें? या &c%cancel%."
+    installment_amount: "&aप्रत्येक किस्त की राशि टाइप करें। या &c%cancel%."
+    interval_hours: "&aकिस्तों के बीच घंटे में अंतराल (0 = डिफॉल्ट &e%default_hours%). या &c%cancel%."
+    first_delay_hours: "&aपहली किस्त कितने घंटों में? (0 = वही अंतराल &e%default_hours%). या &c%cancel%."
+    pay_amount: "&aआप कितना भुगतान करना चाहते हैं टाइप करें (या 'all'). शेष: &e%remaining%. या &c%cancel%."
+  error:
+    invalid_number: "&cअमान्य संख्या।"
+    invalid_type: "&cअमान्य प्रकार। 'total' या 'किस्तें' का उपयोग करें।"
+    invalid_installments_mode: "&cअमान्य विकल्प। 'संख्या' या 'राशि' का उपयोग करें।"
+    too_small: "&cऋण राशि कम से कम &e%min% होनी चाहिए।"
+    too_large: "&cऋण राशि अधिकतम &e%max% होनी चाहिए।"
+    too_many_installments: "&cबहुत अधिक किस्तें। अधिकतम: &e%max%."
+    not_enough_money: "&cभुगतान करने के लिए पर्याप्त धन नहीं है।"
+    deposit_failed: "&cऋण नहीं बनाया जा सका (जमा विफल)।"
+    installment_too_small: "&c&e%loan_amount% के ऋण के लिए न्यूनतम किस्त &e%min_installment% होनी चाहिए।"
+  pay:
+    success: "&aभुगतान प्राप्त हुआ: &6%amount%. शेष: &e%remaining%."
+  charge:
+    success: "&cकिस्त वसूल की गई: &6%amount%. शेष: &e%remaining%."
+    missed: "&cकिस्त वसूल नहीं की जा सकी (&6%amount%). चूक &e%missed%/%max_missed%."
+    defaulted: "&4ऋण डिफॉल्ट में चला गया। शेष: &e%remaining%."
+
+economy:
+  bank_not_supported: "&cबैंक समर्थन लागू नहीं है"
+  eco:
+    usage: "&aउपयोग: /eco give <player> <amount> | /eco take <player> <amount>"
+    no_permission: "&cआपके पास /eco का उपयोग करने की अनुमति नहीं है।"
+    player_not_found: "&cखिलाड़ी नहीं मिला: &f%player%"
+    invalid_amount: "&cअमान्य राशि: &6%amount%"
+    positive_only: "&cराशि सकारात्मक होनी चाहिए।"
+    deposit_ok: "&f%player% को &6%amount% जोड़ा गया।"
+    withdraw_ok: "&f%player% से &6%amount% हटाया गया।"
+    deposit_error: "&cजमा नहीं किया जा सका: &6%error%"
+    withdraw_error: "&cनिकाला नहीं जा सका: &6%error%"
+

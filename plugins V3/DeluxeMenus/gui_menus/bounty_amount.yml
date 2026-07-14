@@ -1,0 +1,59 @@
+menu_title: '&8🎯 &6Betrag auswählen'
+
+size: 27
+
+items:
+
+  border:
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+      - 0-26
+    display_name: '&7'
+
+
+  100:
+    material: GOLD_NUGGET
+    slot: 10
+    display_name: '&e100 Berry'
+    left_click_commands:
+      - '[player] bounty set %target% 100'
+
+
+  500:
+    material: GOLD_INGOT
+    slot: 11
+    display_name: '&e500 Berry'
+    left_click_commands:
+      - '[player] bounty set %target% 500'
+
+
+  1000:
+    material: GOLD_BLOCK
+    slot: 12
+    display_name: '&61000 Berry'
+    left_click_commands:
+      - '[player] bounty set %target% 1000'
+
+
+  5000:
+    material: DIAMOND
+    slot: 14
+    display_name: '&b5000 Berry'
+    left_click_commands:
+      - '[player] bounty set %target% 5000'
+
+
+  10000:
+    material: NETHER_STAR
+    slot: 16
+    display_name: '&c10000 Berry'
+    left_click_commands:
+      - '[player] bounty set %target% 10000'
+
+
+  back:
+    material: ARROW
+    slot: 22
+    display_name: '&7⬅ Zurück'
+    left_click_commands:
+      - '[openguimenu] bounties'

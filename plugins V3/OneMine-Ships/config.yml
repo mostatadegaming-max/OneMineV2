@@ -1,0 +1,15 @@
+# OneMine-Ships config
+# Level definitions
+levels:
+  1:
+    name: "Small Boat"
+    speed: 0.5
+    size: 3
+  2:
+    name: "Large Ship"
+    speed: 0.8
+    size: 5
+  3:
+    name: "Pirate Galleon"
+    speed: 1.2
+    size: 8

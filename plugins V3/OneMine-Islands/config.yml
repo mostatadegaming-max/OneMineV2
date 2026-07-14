@@ -1,0 +1,5 @@
+settings:
+  claim-radius: 50
+messages:
+  claimed: "Island claimed"
+  no-island: "No island found here"

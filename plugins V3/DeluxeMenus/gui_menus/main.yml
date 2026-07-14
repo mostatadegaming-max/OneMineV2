@@ -1,0 +1,148 @@
+menu_title: '&8🏴 &6&lOneMine'
+open_command:
+  - menu
+  - menü
+  - onemine
+
+size: 54
+
+items:
+
+  # Hintergrund
+  border:
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 17
+      - 18
+      - 26
+      - 27
+      - 35
+      - 36
+      - 44
+      - 45
+      - 46
+      - 47
+      - 48
+      - 50
+      - 51
+      - 52
+      - 53
+    display_name: '&7'
+
+
+  # Titel
+  title:
+    material: OAK_BOAT
+    slot: 4
+    display_name: '&6&l🏴 OneMine'
+    lore:
+      - '&7Piraten Survival'
+      - '&7Baue deine Crew.'
+      - '&7Erobere die Meere.'
+      - ''
+      - '&eWillkommen an Bord!'
+
+
+  # Crew
+  crew:
+    material: PLAYER_HEAD
+    slot: 20
+    display_name: '&e&l👥 Crew'
+    lore:
+      - '&7Verwalte deine Piratencrew'
+      - ''
+      - '&6• Crew erstellen'
+      - '&6• Mitglieder verwalten'
+      - '&6• Einladungen'
+      - ''
+      - '&a▶ Öffnen'
+    left_click_commands:
+      - '[sound] ENTITY_PLAYER_LEVELUP'
+      - '[openguimenu] crew'
+
+
+  # Shop
+  shop:
+    material: BARREL
+    slot: 22
+    display_name: '&6&l💰 Shop'
+    lore:
+      - '&7Der Marktplatz von OneMine'
+      - ''
+      - '&6• AuctionHouse'
+      - '&6• Schiffe'
+      - '&6• Verkaufen'
+      - ''
+      - '&a▶ Öffnen'
+    left_click_commands:
+      - '[sound] BLOCK_BARREL_OPEN'
+      - '[openguimenu] shop'
+
+
+  # Kopfgelder
+  bounty:
+    material: SKELETON_SKULL
+    slot: 24
+    display_name: '&c&l🎯 Kopfgelder'
+    lore:
+      - '&7Die gefährlichsten Piraten'
+      - '&7werden gesucht.'
+      - ''
+      - '&6• Top Kopfgelder'
+      - '&6• Neue Kopfgelder'
+      - '&6• Eigene Übersicht'
+      - ''
+      - '&a▶ Öffnen'
+    left_click_commands:
+      - '[sound] ENTITY_ARROW_HIT_PLAYER'
+      - '[openguimenu] bounties'
+
+
+  # Profil
+  profile:
+    material: PLAYER_HEAD
+    slot: 40
+    display_name: '&b&l📊 Profil'
+    lore:
+      - '&7Spieler: &f%player_name%'
+      - ''
+      - '&7Kontostand:'
+      - '&6%vault_eco_balance_formatted%'
+      - ''
+      - '&eDeine Reise beginnt hier.'
+
+
+  # Einstellungen
+  settings:
+    material: REDSTONE
+    slot: 42
+    display_name: '&7&l⚙ Einstellungen'
+    lore:
+      - '&7Passe dein Spielerlebnis an'
+      - ''
+      - '&a▶ Öffnen'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[openguimenu] settings'
+
+
+  # Schließen
+  close:
+    material: BARRIER
+    slot: 49
+    display_name: '&c&l❌ Schließen'
+    lore:
+      - '&7Menü schließen'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_LAND'
+      - '[close]'

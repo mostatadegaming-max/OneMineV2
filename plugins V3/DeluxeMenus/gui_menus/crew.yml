@@ -1,0 +1,132 @@
+menu_title: '&8🏴 &6&lCrew Verwaltung'
+open_command:
+  - crewmenu
+
+size: 54
+
+items:
+
+  border:
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+      - 0-8
+      - 9
+      - 17
+      - 18
+      - 26
+      - 27
+      - 35
+      - 36
+      - 44
+      - 45-53
+    display_name: '&7'
+
+
+  title:
+    material: OAK_BOAT
+    slot: 4
+    display_name: '&6&l🏴 Deine Piratencrew'
+    lore:
+      - '&7Schließe dich zusammen'
+      - '&7und erobere die Meere.'
+
+
+  create:
+    material: GOLD_INGOT
+    slot: 19
+    display_name: '&e&l➕ Crew erstellen'
+    lore:
+      - '&7Erstelle deine eigene Crew.'
+      - ''
+      - '&7Du wirst Kapitän.'
+      - ''
+      - '&a▶ Öffnen'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_USE'
+      - '[openguimenu] crew_create'
+
+
+  mycrew:
+    material: PLAYER_HEAD
+    slot: 21
+    display_name: '&b&l👥 Meine Crew'
+    lore:
+      - '&7Zeigt deine aktuelle Crew.'
+      - ''
+      - '&6• Name'
+      - '&6• Rang'
+      - '&6• Mitglieder'
+      - ''
+      - '&a▶ Öffnen'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] crew info'
+
+
+  members:
+    material: BOOK
+    slot: 23
+    display_name: '&f&l📋 Mitglieder'
+    lore:
+      - '&7Verwalte deine Crew Mitglieder.'
+      - ''
+      - '&6• Mitglieder anzeigen'
+      - '&6• Spieler entfernen'
+      - ''
+      - '&a▶ Öffnen'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] crew members'
+
+
+  invites:
+    material: PAPER
+    slot: 25
+    display_name: '&a&l📨 Einladungen'
+    lore:
+      - '&7Offene Crew Einladungen'
+      - ''
+      - '&a▶ Anzeigen'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] crew invites'
+
+
+  search:
+    material: COMPASS
+    slot: 30
+    display_name: '&6&l🔍 Crew suchen'
+    lore:
+      - '&7Finde andere Piratencrews.'
+      - ''
+      - '&a▶ Suchen'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[player] crew list'
+
+
+  leave:
+    material: OAK_DOOR
+    slot: 32
+    display_name: '&c&l🚪 Crew verlassen'
+    lore:
+      - '&7Verlasse deine aktuelle Crew.'
+      - ''
+      - '&cAchtung!'
+      - '&7Dieser Schritt kann nicht rückgängig gemacht werden.'
+      - ''
+      - '&a▶ Verlassen'
+    left_click_commands:
+      - '[sound] ENTITY_ZOMBIE_ATTACK_WOODEN_DOOR'
+      - '[player] crew leave'
+
+
+  back:
+    material: ARROW
+    slot: 49
+    display_name: '&7⬅ Zurück'
+    lore:
+      - '&7Zurück zum Hauptmenü'
+    left_click_commands:
+      - '[sound] UI_BUTTON_CLICK'
+      - '[openguimenu] main'

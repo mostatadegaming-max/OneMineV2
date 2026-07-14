@@ -1,0 +1,310 @@
+# Simplified Chinese messages (简体中文)
+pay:
+  # Command messages expected by code
+  only_players: "&c只有玩家可以使用 /pay。"
+  no_permission: "&c你没有权限使用 /pay。"
+  invalid_amount: "&c无效的金额。"
+  player_offline: "&c玩家 &f%player% 不在线；请求未发送。"
+  amount_too_small: "&c金额必须至少为 &6%min%"
+  amount_too_large: "&c金额必须至多为 &6%max%"
+  not_enough_money: "&c余额不足。"
+  withdraw_failed: "&c无法取款。"
+  sent_ok: "&a你支付了 &6%amount% 给 &f%player%"
+  received_ok: "&a你收到了来自 &f%player% 的 &6%amount%"
+  cancelled: "&c付款请求已取消。"
+
+  # UI/menu and other messages
+  menu:
+    title_main: "&8&l选择玩家"
+    title_player: "&8&l操作: &f%player%"
+    title_quick_pay: "&8&l快速付款: &f%player%"
+    nav:
+      prev_name: "&a上一页"
+      next_name: "&a下一页"
+    item:
+      pay: "&6&l支付"
+      loan: "&e&l贷款"
+      view_balance: "&e&l金钱"
+      view_balance_lore: "余额: %vault_eco_balance_short%"
+      charge: "&6&l收款"
+      settings: "&c&l设置"
+      manual_amount: "&a&l自定义金额"
+      back: "&c&l返回"
+    lore:
+      settings:
+        - "&7打开 Vault 设置。"
+      pay:
+        - "&7支付给此玩家。"
+      quick_pay:
+        - "&7立即支付此金额。"
+      loan:
+        - "&7打开你的贷款菜单。"
+      view_balance:
+        - "&7显示 %player% 目前的余额。"
+      charge:
+        - "&7发送付款请求。"
+      manual_amount:
+        - "&7在聊天中输入金额。"
+      back:
+        - "&7返回上一个菜单。"
+  prompt:
+    enter_amount_pay: "&a请在聊天中输入要支付给 &f%player% 的金额，或 &c%cancel%."
+    enter_amount_charge: "&a请在聊天中输入要向 &f%player% 收取的金额，或 &c%cancel%."
+    cancel_words: "&c取消,cancel,cancelar"
+  error:
+    player_not_found: "&c找不到玩家: &f%player%"
+    invalid_amount: "&c无效的金额。"
+    positive_only: "&c金额必须为正数。"
+    min_amount: "&c金额必须至少为 &6%min%"
+    max_amount: "&c金额必须至多为 &6%max%"
+    insufficient_funds: "&c余额不足。"
+    withdraw_error: "&c无法取款: &4%error%"
+    deposit_error: "&c无法存款: &4%error%"
+    player_offline: "&c玩家 %player% 不在线；请求未发送。"
+  success:
+    sender: "&a你支付了 &6%amount% 给 &f%player%"
+
+  view:
+    balance: "&a&f%player% 的余额: &6%amount%"
+    money_label: "&e金钱"
+  request:
+    prefix: "&e付款请求已准备好: "
+    click: "&a点击这里支付 &f%player% &6%amount_formatted%"
+    hover: "执行 /pay &f%player% &6%amount%"
+    sent: "&a已向 &f%player% 发送金额为 &6%amount_formatted% 的请求。"
+    stored: "&a请求已存储；将在 &f%player% 加入时发送。"
+  pending:
+    header: "&a你有 &e%count% 个待处理的付款请求。"
+    limit_notice: "显示 %total% 中的 %shown% 个；其余将稍后发送。"
+
+cmd:
+  pay:
+    only_players: "只有玩家可以使用 /pay。"
+    no_permission: "你没有权限使用 /pay。"
+    usage: "用法: /pay <玩家> <金额> (或 /pay 打开菜单，/pay <玩家> 打开子菜单)"
+    player_not_found: "找不到玩家: &f%player%"
+    invalid_amount: "无效的金额: &6%amount%"
+    positive_only: "金额必须为正数。"
+  balance:
+    only_players: "&c此指令仅限玩家使用。"
+    no_permission: "&c你没有权限使用 /balance。"
+    your_balance: "你的余额: &6%amount%"
+  vault:
+    no_permission: "&c你没有权限重新加载插件。"
+
+# Keys expected by menu service (top-level)
+menu:
+  title_main: "&8&l选择玩家"
+  title_player: "&8&l操作: &f%player%"
+  target_player: "&8&l选择目标"
+  target_player_lore: "&a点击选择玩家"
+  enter_amount: "&a输入金额"
+  enter_amount_lore: "&a在聊天中输入金额"
+
+# Keys expected by balance command (top-level)
+balance:
+  no_permission: "&c你没有权限使用 /balance。"
+  your_balance: "&6你的余额: %amount%"
+
+  only_players: "&c此指令仅限玩家使用。"
+plugin:
+  enabled: "内部经济系统已注册，不依赖 Vault.jar"
+  disabled: "Vault (内部经济) 已禁用。"
+  reloaded: "配置和消息已重新加载 (语言: %lang%)。"
+
+prefix: "&#1fc9ff&lV&#4bd7fe&la&#76e4fc&lu&#a2f2fb&ll&#cdfff9&lt"
+
+top:
+  unknown_player: "玩家"
+
+vaultop:
+  no_permission: "&c你没有权限使用 /vaultop。"
+  top_unavailable: "&c目前的经济提供者不支持排行榜。"
+  top_header: "&6金钱排行榜 (第 %page%/%pages% 页):"
+  no_data: "&7目前还没有余额资料。"
+
+vault:
+  menu:
+    title: "&bVault 菜单"
+    item:
+      pay: "&a支付"
+      loan: "&a贷款"
+      settings: "&c设置"
+      reload: "&e重新加载"
+      update: "&b更新"
+    lore:
+      pay:
+        - "&7打开支付菜单。"
+      loan:
+        - "&7申请、查看并偿还贷款。"
+      settings:
+        - "&7编辑插件设置。"
+      reload:
+        - "&7重新加载设置与消息。"
+      update:
+        - "&7检查更新。"
+
+settings:
+  title: "&c设置"
+  title_loans: "&c贷款设置"
+  title_pay: "&c支付设置"
+  title_texts: "&c文本设置"
+  item:
+    loans: "&a贷款"
+    pay: "&a支付"
+    texts: "&a文字"
+    back: "&7返回"
+  lore:
+    loans:
+      - "&7设置贷款系统。"
+    pay:
+      - "&7设置 /pay 的限制与菜单。"
+    texts:
+      - "&7编辑菜单文字。"
+    back:
+      - "&7返回上一页。"
+    loans_enabled:
+      - "&7开启/关闭贷款。"
+    loans_min:
+      - "&7允许的最小贷款金额。"
+    loans_max:
+      - "&7允许的最大贷款金额。"
+    loans_max_installments:
+      - "&7允许的最大期数。"
+    loans_default_interval_hours:
+      - "&7每期之间的预设小时数。"
+    loans_charge_check_seconds:
+      - "&7处理扣款的频率。"
+    loans_max_missed:
+      - "&7违约前允许的失败次数。"
+    pay_min:
+      - "&7允许的最小支付金额。"
+    pay_max:
+      - "&7允许的最大支付金额。"
+    pay_menu_size:
+      - "&7/pay 菜单大小（9 的倍数）。"
+    pay_show_self:
+      - "&7在 /pay 列表中显示自己。"
+  loans:
+    enabled: "&f贷款"
+    min: "&f最小贷款"
+    max: "&f最大贷款"
+    max_installments: "&f最大期数"
+    default_interval_hours: "&f预设间隔 (h)"
+    charge_check_seconds: "&f检查 (s)"
+    max_missed: "&f最大失败"
+  pay:
+    min: "&f最小支付"
+    max: "&f最大支付"
+    menu_size: "&f/pay 菜单大小"
+    show_self: "&f显示自己"
+  prompt:
+    value: "&a请在聊天输入 &e%key% 的新数值，或 &c%cancel%."
+    text: "&a请在聊天输入 &e%key% 的新文字，或 &c%cancel%."
+  cancelled: "&c已取消编辑。"
+  invalid_number: "&c无效的数字。"
+  saved: "&a已保存: &e%key%"
+  save_failed: "&c无法保存文件。"
+
+loan:
+  no_permission: "&c你没有权限使用贷款功能。"
+  none: "&a你目前没有启用中的贷款。"
+  already_active: "&a你已经有一笔启用中的贷款。"
+  cancelled: "&c贷款操作已取消。"
+  created: "&a贷款已建立：&6%amount% &7| 期数：&f%installments% &7| 每期：&6%installment_amount% &7| 每 &f%interval_hours% 小时一次"
+  paid: "&2你的贷款已全部还清。"
+  status: "&2贷款：本金 &f%principal% &7| 剩余 &f%remaining% &7| 每期 &6%installment% &7| 剩余期数 &f%installments_left% &7| 下次扣款于 &c%next_in_minutes% 分钟后"
+  menu:
+    title: "&a贷款"
+    item:
+      request: "&a申请"
+      status: "&e状态"
+      pay: "&6付款"
+      settings: "&c设置"
+    lore:
+      request:
+        - "&7申请新的贷款。"
+      status:
+        - "&7查看你的贷款状态。"
+      pay:
+        - "&7偿还你的贷款。"
+      settings:
+        - "&7打开贷款设置。"
+  request:
+    title:
+      type: "&a申请贷款"
+      delay: "&e总延迟"
+      installments_mode: "&e分期模式"
+      installments_count: "&e期数"
+      interval: "&e间隔"
+      first_delay: "&e第一期"
+    item:
+      total: "&e一次付清"
+      installments: "&a分期"
+      mode_count: "&e期数"
+      mode_amount: "&e金额"
+      same_as_interval: "&e同间隔"
+      back: "&7返回"
+      cancel: "&c取消"
+    lore:
+      total:
+        - "&7一次付款。"
+      installments:
+        - "&7分期付款。"
+      mode_count:
+        - "&7选择期数。"
+      mode_amount:
+        - "&7在聊天输入每期金额。"
+      installments_count:
+        - "&7选择分期期数。"
+      delay:
+        - "&7选择几小时后扣款。"
+      interval:
+        - "&7选择期与期之间的小时数。"
+      first_delay:
+        - "&7选择第一期延迟。"
+      back:
+        - "&7返回上一页。"
+      cancel:
+        - "&7取消申请。"
+  prompt:
+    cancel_words: "&c取消,&ccancel,&ccancelar"
+    amount: "&a请在聊天中输入贷款金额，或输入 &c%cancel%."
+    type: "&a请输入 'total'（一次付清）或 '分期'，或输入 &c%cancel%."
+    total_delay_hours: "&a服务器应在几小时后收取总付款？（例如：24）或输入 &c%cancel%."
+    installments_mode: "&a请输入 '数量'（期数）或 '金额'（每期金额），或输入 &c%cancel%."
+    installments_count: "&a要分几期？或输入 &c%cancel%."
+    installment_amount: "&a请输入每期付款金额。或输入 &c%cancel%."
+    interval_hours: "&a每期之间的间隔小时数（0 = 预设 &e%default_hours%）。或输入 &c%cancel%."
+    first_delay_hours: "&a第一期几小时后开始？（0 = 与间隔相同 &e%default_hours%）。或输入 &c%cancel%."
+    pay_amount: "&a请输入你要支付多少（或输入 'all'）。剩余：&e%remaining%。或输入 &c%cancel%."
+  error:
+    invalid_number: "&c无效的数字。"
+    invalid_type: "&c无效的类型。请使用 'total' 或 '分期'."
+    invalid_installments_mode: "&c无效的选项。请使用 '数量' 或 '金额'."
+    too_small: "&c贷款金额必须至少为 &e%min%。"
+    too_large: "&c贷款金额必须至多为 &e%max%。"
+    too_many_installments: "&c期数过多。最大值：&e%max%。"
+    not_enough_money: "&c没有足够的金钱可支付。"
+    deposit_failed: "&c无法建立贷款（存款失败）。"
+    installment_too_small: "&c对于 &e%loan_amount% 的贷款，最低分期金额必须为 &e%min_installment%。"
+  pay:
+    success: "&a已收到付款：&6%amount%。剩余：&e%remaining%。"
+  charge:
+    success: "&c已收取分期款：&6%amount%。剩余：&e%remaining%。"
+    missed: "&c无法收取分期款（&6%amount%）。失败次数 &e%missed%/%max_missed%。"
+    defaulted: "&4贷款已违约。剩余：&e%remaining%。"
+
+economy:
+  bank_not_supported: "&c未实作银行支持"
+  eco:
+    usage: "&a用法: /eco give <玩家> <金额> | /eco take <玩家> <金额>"
+    no_permission: "&c你没有权限使用 /eco。"
+    player_not_found: "&c找不到玩家: &f%player%"
+    invalid_amount: "&c无效的金额: &6%amount%"
+    positive_only: "&c金额必须为正数。"
+    deposit_ok: "&c已将 &6%amount% 添加给 &f%player%。"
+    withdraw_ok: "&c已从 &f%player% 移除 &6%amount%。"
+    deposit_error: "&c无法存款: &6%error%"
+    withdraw_error: "&c无法提款: &6%error%"
+

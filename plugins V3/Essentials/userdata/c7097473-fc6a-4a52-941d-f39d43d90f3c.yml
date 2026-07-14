@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+flymode: false
+muted: false
+jailed: false
+ip-address: 137.193.68.56
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1783972718946
+  login: 1783972195130
+money: '0'
+last-account-name: Mr_Mingow
+lastlocation:
+  world: fc8c7e25-cd3a-4878-b6ae-72382ed6ea89
+  world-name: world
+  x: 64.09799734992751
+  y: 67.0
+  z: -28.972426524163776
+  yaw: -41.50261306762695
+  pitch: 23.480072021484375
+logoutlocation:
+  world: fc8c7e25-cd3a-4878-b6ae-72382ed6ea89
+  world-name: world
+  x: 69.30000001192093
+  y: 13.0
+  z: -42.36280255233423
+  yaw: 100.38015747070312
+  pitch: 39.394344329833984

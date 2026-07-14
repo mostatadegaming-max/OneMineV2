@@ -1,0 +1,62 @@
+menu_title: '&8💰 &6&lMarktplatz'
+
+open_command:
+  - shop
+
+size: 54
+
+items:
+
+  border:
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+      - 0-53
+    display_name: '&7'
+
+
+  auction:
+    material: CHEST
+    slot: 13
+    display_name: '&6&l🛒 AuctionHouse'
+    lore:
+      - '&7Kaufe und verkaufe Items'
+      - '&7von Spielern.'
+    left_click_commands:
+      - '[player] ah'
+
+
+  sell:
+    material: EMERALD
+    slot: 15
+    display_name: '&a&l💵 Verkaufen'
+    lore:
+      - '&7Verkaufe deine Items'
+    left_click_commands:
+      - '[player] ah sell'
+
+
+  ships:
+    material: OAK_BOAT
+    slot: 22
+    display_name: '&6&l🚢 Schiffe'
+    lore:
+      - '&7Verwalte deine Schiffe'
+    left_click_commands:
+      - '[openguimenu] ships'
+
+
+  balance:
+    material: GOLD_INGOT
+    slot: 31
+    display_name: '&e&l💰 Kontostand'
+    lore:
+      - '&7Dein Geld:'
+      - '&6%vault_eco_balance_formatted%'
+
+
+  back:
+    material: ARROW
+    slot: 49
+    display_name: '&7⬅ Zurück'
+    left_click_commands:
+      - '[openguimenu] main'

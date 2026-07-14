@@ -1,0 +1,77 @@
+menu_title: '&8🎯 &c&lKopfgelder'
+
+size: 45
+
+items:
+
+  border:
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+      - 0-44
+    display_name: '&7'
+
+
+  top:
+    material: NETHER_STAR
+    slot: 11
+    display_name: '&6&l🏆 Top Kopfgelder'
+    lore:
+      - '&7Die meistgesuchten Piraten'
+      - '&7auf OneMine.'
+      - ''
+      - '&e▶ Anzeigen'
+    left_click_commands:
+      - '[player] bounty top'
+
+
+  open:
+    material: PAPER
+    slot: 13
+    display_name: '&c&l📜 Offene Kopfgelder'
+    lore:
+      - '&7Alle aktiven Kopfgelder'
+      - ''
+      - '&e▶ Anzeigen'
+    left_click_commands:
+      - '[player] bounty list'
+
+
+  set:
+    material: GOLD_INGOT
+    slot: 15
+    display_name: '&e&l➕ Kopfgeld setzen'
+    lore:
+      - '&7Setze ein Kopfgeld'
+      - '&7auf einen Spieler.'
+      - ''
+      - '&e▶ Spieler auswählen'
+    left_click_commands:
+      - '[openguimenu] bounty_players'
+
+
+  mine:
+    material: PLAYER_HEAD
+    slot: 22
+    display_name: '&b&l👤 Mein Kopfgeld'
+    lore:
+      - '&7Zeigt dein Kopfgeld.'
+    left_click_commands:
+      - '[player] bounty me'
+
+
+  rewards:
+    material: CHEST
+    slot: 24
+    display_name: '&a&l💰 Belohnungen'
+    lore:
+      - '&7Deine erhaltenen Belohnungen.'
+    left_click_commands:
+      - '[player] bounty rewards'
+
+
+  back:
+    material: ARROW
+    slot: 40
+    display_name: '&7⬅ Zurück'
+    left_click_commands:
+      - '[openguimenu] main'
